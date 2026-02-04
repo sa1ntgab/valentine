@@ -79,14 +79,18 @@ h1 {
     justify-content: center;
     align-items: center;
     transition: all 0.3s ease; 
+    transition: transform 0.8s ease-in-out, background-image 0.3s ease;
 }
 
 /* NO HOVER GIF */
 .no-btn:hover {
-    background-image: url('assets/dont.gif'); 
-    background-size: contain; 
-    background-position: center;
-    color: white;             
-    border: none;             
-}
+    transform: translate(1200px, -500px);
 
+    background-image: url('assets/dont.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    color: white;
+    border: 3px solid transparent;
+}
